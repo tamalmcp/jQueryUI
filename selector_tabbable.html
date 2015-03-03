@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tabbable demo</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<style>
+input {
+border: 1px solid #000;
+}
+div {
+padding: 5px;
+}
+</style>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+</head>
+<body>
+<div><input value="no tabindex"></div>
+<div><input tabindex="5" value="positive tabindex"></div>
+<div><input tabindex="-1" value="negative tabindex"></div>
+<script>
+$( ":tabbable" ).css( "border-color", "red" );
+</script>
+</body>
+</html>

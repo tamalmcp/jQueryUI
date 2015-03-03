@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice jQuery</title>
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<style type="text/css">
+		span{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<label for="autocomplete">Select a programming language: </label>
+<input id="autocomplete">
+
+<script type="text/javascript">
+	$( "#autocomplete" ).autocomplete({
+	source: [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ]
+	});
+</script>
+
+</body>
+</html>
